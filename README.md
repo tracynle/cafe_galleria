@@ -1,2 +1,2 @@
 # cafe_galleria
-A mobile responsive cafe website that uses simple HTML, CSS, and Javascript. I wanted to create a website layout that does not rely on libraries. 
+A mobile responsive cafe website that uses simple HTML, CSS, and Javascript. I wanted to create a website layout that does not depend on styling libraries so that I can understand how to use flexbox, grid, and semantic CSS.

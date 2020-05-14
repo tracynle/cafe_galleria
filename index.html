@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- NAME: TRACY LE  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Cafe Galleria. We are proud to serve our special single-origin espresso that we roast in sunny California.
+    Have your friendly neighborhood barista make you a fine cup of coffee; we hope it will have you come visit us again. ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Café Galleria - Home</title>
+    <!-- Styling -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b14735e9ca.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+                <div class="logo-centered">
+                    <a href="index.html" class="active">CAFÉ GALLERIA </a>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="aboutvideo responsive">
+            <video autoplay loop playsinline muted>
+                <source src="videos/cafegalleria.mp4" type="video/mp4">
+                <source src="videos/cafegalleria.mp4" type="video/webm">
+                <source src="videos/cafegalleria.ogg" type="video/ogg">
+            </video>
+        </div>
+        <div class="container responsive">
+            <div class="overlay-image image">
+                <a href="menu.html">
+                    <img class="image imagecolumn responsive" src="images/drinks.jpg" alt="Alt text" />
+                    <div class="text">
+                        <h1>Menu</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="overlay-image image">
+                <a href="#">
+                    <img class="image imagecolumn responsive" src="images/cater.jpg" alt="Alt text" />
+                    <div class="text">
+                        <h1>Catering</h1>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="overlay-image image">
+                <a href="menu.html">
+                    <img class="image imagecolumn responsive" src="images/espresso.jpg" alt="Alt text" />
+                    <div class="text">
+                        <h1>About</h1>
+                    </div>
+                </a>
+            </div> -->
+            <div class="overlay-image image">
+                <a href="#">
+                    <img class="image imagecolumn responsive" src="images/gallery2.jpg" alt="Alt text" />
+                    <div class="text">
+                        <h1>Gallery</h1>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container responsive">
+            <div class="content">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eos repudiandae voluptate, iusto,
+                    fugit doloribus facere blanditiis corrupti illo consectetur delectus possimus numquam culpa enim.
+                    Laborum, voluptatibus fugiat. Aliquid illo omnis voluptatibus deserunt rerum in cupiditate.
+                    Ratione, sapiente. Reprehenderit explicabo neque voluptates placeat tempore ipsam harum alias illum
+                    ullam aspernatur!
+                </p>
+                <button class="button">
+                    <a href="about.html"> Our Story</a>
+                </button>
+            </div>
+        </div>
+        <div class="container responsive">
+            <div class="content">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eos repudiandae voluptate, iusto,
+                    fugit doloribus facere blanditiis corrupti illo consectetur delectus possimus numquam culpa enim.
+                    Laborum, voluptatibus fugiat. Aliquid illo omnis voluptatibus deserunt rerum in cupiditate.
+                    Ratione, sapiente. Reprehenderit explicabo neque voluptates placeat tempore ipsam harum alias illum
+                    ullam aspernatur!
+                </p>
+                <button class="button">
+                    <a href="about.html"> Read More</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="social-media">
+                <i class="fab fa-twitter fa-lg fa-fw"></i>
+                <i class="fab fa-facebook fa-lg fa-fw"></i>
+                <i class="fab fa-instagram fa-lg fa-fw"></i>
+                <i class="fab fa-yelp fa-lg fa-fw"></i>
+            </div>
+            <div class="signup">
+                <form>
+                    <label for="exampleEmailInput">Sign up for our newsletter</label>
+                    <input type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                    <input class="button-primary" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <p>Copyright © Tracy Le 2020</p>
+    </footer>
+</body>
+
+</html>
