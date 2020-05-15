@@ -1,57 +1,397 @@
+
 <!DOCTYPE html>
 <!-- NAME: TRACY LE  -->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="We serve the finest single-origin espresso right in sunny California.
-    Come visit us for a bite to eat paired with our hand crafted beverages.">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Café Galleria - Menu</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/b14735e9ca.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Our menu consists of items that compliment our coffee but you are always welcome to enjoy it with anything! We are 
+      happy to take your order."
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Café Galleria - Home</title>
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b14735e9ca.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Javascript -->
     <script src="index.js"></script>
-</head>
+  </head>
 
-<body onload="displayImages();">
+  <body>
     <div class="wrapper">
-        <div id="content-wrap">
-            <nav class="topnav" id="myTopnav">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+      <div class="header" [role="banner"]>
+        <nav class="topnav" id="myTopnav" [role="navigation"]>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
 
-                <div class="logo-centered">
-                    <a href="index.html" class="active">CAFÉ GALLERIA </a>
+          <div class="logo-centered">
+            <a href="index.html" class="active">CAFÉ GALLERIA </a>
+          </div>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      </div>
+      <main [role="main"] class="menu-body">
+        <div class="menu-section">
+            <h2 class="menu-section-title">DRINKS</h2>
+            <h3>Espresso/Latte</h3>
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Espresso
                 </div>
 
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
+                <div class="menu-item-price">
+                    $3.25
+                </div>
 
+                <!-- <div class="menu-item-description">
+                    From our signature Café Galleria Espresso blend, it has caramel and toffee notes
+                </div> -->
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Macchiato
+                </div>
+
+                <div class="menu-item-price">
+                    $3.75
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Cappucino
+                </div>
+
+                <div class="menu-item-price">
+                    $4
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Latte
+                </div>
+
+                <div class="menu-item-price">
+                    $5.25
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <h3>Tea</h3>
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Chai Latte
+                </div>
+
+                <div class="menu-item-price">
+                    $5.50
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    London Fog
+                </div>
+
+                <div class="menu-item-price">
+                    $5.50
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Matcha Latte
+                </div>
+
+                <div class="menu-item-price">
+                    $5.25
+                </div>
+
+            </div>
+            <!-- Item ends -->
+            
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Hot or Iced Tea
+                </div>
+
+                <div class="menu-item-price">
+                    $3
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <h3>Add Ons</h3>
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Oat Milk
+                </div>
+
+                <div class="menu-item-price">
+                    .60&#162;
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Soy Milk
+                </div>
+
+                <div class="menu-item-price">
+                    .60&#162;
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Almond Milk
+                </div>
+
+                <div class="menu-item-price">
+                    .60&#162;
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Add Shot
+                </div>
+
+                <div class="menu-item-price">
+                    .80&#162;
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Syrup
+                </div>
+
+                <div class="menu-item-price">
+                    .50&#162;
+                </div>
+
+                <div class="menu-item-description">
+                    Vanilla, caramel, toffee nut, cinnamon dolce, mocha, white chocolate, lavender
+                </div>
+            </div>
+            <!-- Item ends -->
         </div>
-        <footer>
-            <div class="footer-container">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-yelp"></i>
-            </div>
-            <div class="copyright">
-                <p>Copyright &copy; 2020 Tracy Le</p>
-            </div>
-        </footer>
-    </div>
-</body>
+        <!-- Section ends: Drinks -->
+        <!-- Section starts: Food -->
+		<div class="menu-section">
 
+            <h2 class="menu-section-title">Munchies</h2>
+        
+            <!-- Item starts -->
+            <div class="menu-item">
+                <div class="menu-item-name">
+                    Butter Croissant
+                </div>
+                
+                <div class="menu-item-price">
+                    $5
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Almond Croissant
+                </div>
+                
+                <div class="menu-item-price">
+                    $5.50
+                </div>
+                
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Poppy Seed Lemon Loaf
+                </div>
+                
+                <div class="menu-item-price">
+                    $5
+                </div>
+                
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Quiche Lorriane
+                </div>
+
+                <div class="menu-item-price">
+                    $7
+                </div>
+
+                <div class="menu-item-description">
+                    Made with eggs, smoked bacon, caramelized onion, gruyère
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Ham & Cheese Croissant
+                </div>
+
+                <div class="menu-item-price">
+                    $6
+                </div>
+
+            </div>
+            <!-- Item ends -->
+
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Smoked Salmon Bagel
+                </div>
+
+                <div class="menu-item-price">
+                    $8
+                </div>
+
+                <div class="menu-item-description">
+                    On an everything bagel topped with an onion and chive cream cheese and smoked salmon,
+                    capers, and red onion
+                </div>
+
+            </div>
+            <!-- Item ends -->
+            
+            <!-- Item starts -->
+            <div class="menu-item">
+
+                <div class="menu-item-name">
+                    Fresh Greens Salad
+                </div>
+
+                <div class="menu-item-price">
+                    $8
+                </div>
+
+                <div class="menu-item-description">
+                    Arugla and spinach salad with a boiled egg, garlic seasoned croutons, and beets drizzled with
+                    a berry vinaigrette
+                </div>
+
+            </div>
+            <!-- Item ends -->
+        </div>
+        <!-- Section ends: Appetizers -->
+        
+        
+      </main>
+    </div>
+    <footer [role="footer"]>
+      <div class="footer">
+        <div class="social-media">
+          <i class="fab fa-twitter fa-lg fa-fw"></i>
+          <i class="fab fa-facebook fa-lg fa-fw"></i>
+          <i class="fab fa-instagram fa-lg fa-fw"></i>
+          <i class="fab fa-yelp fa-lg fa-fw"></i>
+        </div>
+        <div class="signup">
+          <form [role="form"]>
+            <label for="exampleEmailInput">Sign up for our newsletter</label>
+            <input
+              type="email"
+              placeholder="test@mailbox.com"
+              id="exampleEmailInput"
+            />
+            <input class="button-primary" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <p>Copyright © Tracy Le 2020</p>
+    </footer>
 </html>

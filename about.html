@@ -1,62 +1,142 @@
 <!DOCTYPE html>
+<!-- NAME: TRACY LE  -->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pacific Trails Resort offers you luxury camping 
-    in spacious and well-appointed private yurts. All camp sites have an ocean view. 
-    Enjoy the zen and natural beauty of Big Sur at Pacific Trails Resort.">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Café Galleria - About</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/b14735e9ca.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn more about who we are and our story. Located in San Francisco, California, Café Galleria's goal is to 
+      create a third place to make them feel like home. We are proud of our single-origin espresso which makes our espresso beverages
+      unique and flavorful. Come visit us for a drink and grab a croissant while you're here."
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Café Galleria - Home</title>
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b14735e9ca.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Javascript -->
     <script src="index.js"></script>
-</head>
+  </head>
 
-<body onload="displayImages();">
+  <body>
     <div class="wrapper">
-        <div id="content-wrap">
-            <nav class="topnav" id="myTopnav">
-                <a href="index.html">Home</a>
-                <a href="">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+      <div class="header" [role="banner" ]>
+        <nav class="topnav" id="myTopnav" [role="navigation" ]>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
 
-                <div class="logo-centered">
-                    <a href="index.html" class="active">CAFÉ GALLERIA </a>
-                </div>
-            </nav>
-            <div class="homebgimg"></div>
-            <div class="row">
-                <div class="column">
-                    <h1>ABOUT SECTION HERE</h1>
-                </div>
-                <div class="column">
-                    <img src="" alt="">
-                </div>
+          <div class="logo-centered">
+            <a href="index.html" class="active">CAFÉ GALLERIA </a>
+          </div>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      </div>
+      <main [role="main" ]>
+        <section [role="section" ]>
+          <div class="container responsive aboutimg">
+            <img
+              src="images/coffee10.jpg"
+              alt="Interior of Café Galleria"
+              class="responsive"
+            />
+          </div>
+          <div class="container responsive">
+            <div class="content">
+              <h1>About Café Galleria</h1>
+              <p>
+                Café Galleria is located in San Francisco, California and was
+                founded with an idea to create a space that would not only serve
+                great coffee but be an environment where friends and famiy can
+                enjoy a third place as their home. With delicious coffee, great
+                company, and food, what else could be even better? We'd love for
+                you to come join us and unwind.
+              </p>
             </div>
-
-        </div>
+          </div>
+          <div class="container responsive">
+            <div class="content">
+              <img
+                src="images/espresso.jpg"
+                alt="image of espresso grounds, beans, and latte"
+              />
+            </div>
+          </div>
+          <div class="container responsive">
+            <div class="content">
+              <h1>Our Coffee</h1>
+              <p>
+                Our espresso beans are sourced from Vietnam which is typically
+                known for growing arabica coffee. We partnered with a family
+                farm who also have passion for coffee. With our visions
+                combined, we created Café Galleria to share this fresh and
+                bright espresso beans to thousans of visitors like you.
+              </p>
+            </div>
+          </div>
+          <div class="container responsive">
+            <div class="content">
+              <img src="images/teamphoto.jpg" alt="team photo" />
+            </div>
+          </div>
+          <div class="container responsive">
+            <div class="content">
+              <h1>Our Employees</h1>
+              <p>
+                We hand pick our employees, choosing those who have an
+                excitement and love for coffee and people. With training and
+                coffee knowledge, our baristas put a lot of care into your
+                handcrafted beverage. Have a sip and enjoy!
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    <footer>
-        <div class="footer-container">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-yelp"></i>
+    <footer [role="footer" ]>
+      <div class="footer">
+        <div class="social-media">
+          <i class="fab fa-twitter fa-lg fa-fw"></i>
+          <i class="fab fa-facebook fa-lg fa-fw"></i>
+          <i class="fab fa-instagram fa-lg fa-fw"></i>
+          <i class="fab fa-yelp fa-lg fa-fw"></i>
         </div>
-        <div class="copyright">
-            <p>Copyright &copy; 2020 Tracy Le</p>
+        <div class="signup">
+          <form>
+            <label for="exampleEmailInput">Sign up for our newsletter</label>
+            <input
+              type="email"
+              placeholder="test@mailbox.com"
+              id="exampleEmailInput"
+            />
+            <input class="button-primary" type="submit" value="Submit" />
+          </form>
         </div>
+      </div>
+      <p>Copyright © Tracy Le 2020</p>
     </footer>
-    </div>
-</body>
-
+  </body>
 </html>
