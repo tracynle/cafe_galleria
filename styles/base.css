@@ -1,4 +1,4 @@
-! normalize.css v3.0.2 | MIT License | git.io/normalize
+/* ! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
  * 1. Set default font family to sans-serif.
@@ -6,13 +6,8 @@
  *    user zoom.
  */
 
-html {
-  font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
 /**
+
  * Remove default margin.
  */
 
@@ -436,8 +431,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* color: #222; */
+  color: #595959;
 }
 
 /* Typography
@@ -467,14 +461,6 @@ p {
   margin-top: 0; 
   font-size: 1.3em;
 }
-
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #fff; }
-a:hover {
-  color: #fff }
 
 
 /* Buttons
@@ -604,12 +590,6 @@ label > .label-body {
   background-color: black;
 } */
 
-.header {
-  padding: 0;
-  background-image: url(../imgs/header.jpg);
-  background-size: cover;
-}
-
 .section {
   max-width: 960px;
   margin: 0 auto;
@@ -624,8 +604,8 @@ label > .label-body {
 }
 
 footer {
-  color: black;
-  padding: 30px;
+    color: #595959;
+    padding: 30px;
   /* background-color: #D7B49E; */
   /* background-color: #545454; */
 }

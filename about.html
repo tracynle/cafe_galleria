@@ -38,8 +38,8 @@
 
   <body>
     <div class="wrapper">
-      <div class="header" [role="banner" ]>
-        <nav class="topnav" id="myTopnav" [role="navigation" ]>
+      <div class="header" role="banner">
+        <div class="topnav" id="myTopnav" role="navigation" >
           <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>
           <a href="gallery.html">Gallery</a>
@@ -53,10 +53,10 @@
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
-        </nav>
+        </div>
       </div>
-      <main [role="main" ]>
-        <section [role="section" ]>
+      <div role="main">
+        <section>
           <div class="container responsive aboutimg">
             <img
               src="images/coffee10.jpg"
@@ -114,9 +114,9 @@
             </div>
           </div>
         </section>
-      </main>
+      </div>
     </div>
-    <footer [role="footer" ]>
+    <footer>
       <div class="footer">
         <div class="social-media">
           <i class="fab fa-twitter fa-lg fa-fw"></i>

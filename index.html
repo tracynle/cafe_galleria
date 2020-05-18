@@ -38,8 +38,8 @@
 
   <body>
     <div class="wrapper">
-      <div class="header" [role="banner"]>
-        <nav class="topnav" id="myTopnav" [role="navigation"]>
+      <div class="header" role="banner">
+        <div class="topnav" id="myTopnav" role="navigation">
           <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>
           <a href="gallery.html">Gallery</a>
@@ -53,17 +53,16 @@
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
-        </nav>
+        </div>
       </div>
-      <main [role="main"]>
+      <div role="main">
         <div class="aboutvideo responsive">
-            <video autoplay loop playsinline muted [role="video"]>
+            <video autoplay loop playsinline muted>
                 <source src="videos/cafegalleria.mp4" type="video/mp4" />
                 <source src="videos/cafegalleria.mp4" type="video/webm" />
                 <source src="videos/cafegalleria.ogg" type="video/ogg" />
             </video>
         </div>
-        <section [role="section"]> 
             <div class="container responsive">
                 <div class="overlay-image image">
                     <a href="menu.html">
@@ -78,22 +77,10 @@
                     </a>
                 </div>
                 <div class="overlay-image image">
-                    <a href="#">
+                    <a href="gallery.html">
                     <img
                         class="image responsive"
                         src="images/cater.jpg"
-                        alt="Alt text"
-                    />
-                    <div class="text">
-                        <h1>Catering</h1>
-                    </div>
-                    </a>
-                </div>
-                <div class="overlay-image image">
-                    <a href="#">
-                    <img
-                        class="image responsive"
-                        src="images/gallery2.jpg"
                         alt="Alt text"
                     />
                     <div class="text">
@@ -101,9 +88,20 @@
                     </div>
                     </a>
                 </div>
-            </div>
-        </section>
-        <article [role="article"]>
+                <div class="overlay-image image">
+                    <a href="contact.html">
+                    <img
+                        class="image responsive"
+                        src="images/gallery2.jpg"
+                        alt="Alt text"
+                    />
+                    <div class="text">
+                        <h1>Contact Us</h1>
+                    </div>
+                    </a>
+                </div>
+        </div>
+        <div role="article">
             <div class="container responsive">
                 <div class="content">
                     <h1>About Café Galleria</h1>
@@ -111,15 +109,13 @@
                     Café Galleria is located in San Francisco, California and was founded with a dream to create a space that would not only serve 
                     great coffee but be an environment where friends and famiy can enjoy a third place as their home. 
                     </p>
-                    <button class="button">
-                        <a href="about.html"> Our Story</a>
-                    </button>
+                    <a href="about.html" class="storybtn"> Our Story</a>
                 </div>
             </div> 
-        </article>
-      </main>
+        </div>
+      </div>
     </div>
-    <footer [role="footer"]>
+    <footer>
       <div class="footer">
         <div class="social-media">
           <i class="fab fa-twitter fa-lg fa-fw"></i>
@@ -128,17 +124,24 @@
           <i class="fab fa-yelp fa-lg fa-fw"></i>
         </div>
         <div class="signup">
-          <form [role="form"]>
-            <label for="exampleEmailInput">Sign up for our newsletter</label>
+          <form >
+            <label for="emailInput">Sign up for our newsletter</label>
             <input
               type="email"
               placeholder="test@mailbox.com"
-              id="exampleEmailInput"
+              id="emailInput"
             />
-            <input class="button-primary" type="submit" value="Submit" />
+            <input class="button-primary" type="submit" value="Submit" id="emailSubmit"/>
           </form>
         </div>
       </div>
       <p>Copyright © Tracy Le 2020</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+        </p>
     </footer>
 </html>

@@ -35,8 +35,8 @@
 
   <body onload="displayImages();">
     <div class="wrapper">
-      <div class="header" [role="banner" ]>
-        <nav class="topnav" id="myTopnav" [role="navigation" ]>
+      <div class="header" role="banner">
+        <div class="topnav" id="myTopnav"  role="navigation">
           <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>
           <a href="gallery.html">Gallery</a>
@@ -50,13 +50,15 @@
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
-        </nav>
+        </div>
       </div>
-      <div class="container responsive">
+      <div role="main">
+        <div class="container responsive">
           <!-- Image gallery will display in container -->
           <div class="grid-container" id="thumbnails">
-           <!-- grid-items (images) appened here -->
+            <!-- grid-items (images) appened here -->
           </div>
+        </div>
       </div>
 
       <!-- Modal for images-->
@@ -64,7 +66,7 @@
         <span class="close">&times;</span>
 
         <!-- where main image will be in lightbox -->
-        <img class="modal-content" name="modalImg" />
+        <img class="modal-content" name="modalImg" id="modalImg" src="" alt="a collection of images from the cafe"/>
         <div id="modalCaption"></div>
         <div class="row">
           <div class="column">
@@ -92,8 +94,8 @@
           <i class="fab fa-instagram fa-lg fa-fw"></i>
           <i class="fab fa-yelp fa-lg fa-fw"></i>
         </div>
-        <div class="signup">
-          <form>
+        <div>
+          <form class="signup">
             <label for="exampleEmailInput">Sign up for our newsletter</label>
             <input
               type="email"

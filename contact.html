@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- NAME: TRACY LE  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="If you have any questions or just want to send us a hello, feel free to send us a message using the 
+      contact form below. We'd love to hear from you!
+      "
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Café Galleria - Home</title>
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b14735e9ca.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header" role="banner">
+        <div class="topnav" id="myTopnav" role="navigation">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+
+          <div class="logo-centered">
+            <a href="index.html" class="active">CAFÉ GALLERIA </a>
+          </div>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div role="main">
+        <div class="container ">
+            <img
+                id="contactlogoimg"
+                src="images/contactlogo.png"
+                alt="Interior of Café Galleria"
+            />
+            </div>
+            <div class="container responsive">
+                <form class="topBefore contactform">
+                        
+                    <input id="name" type="text" placeholder="NAME" aria-label="name">
+                    <input id="email" type="text" placeholder="E-MAIL" aria-label="email">
+                    <textarea id="message" placeholder="MESSAGE" aria-label="message"></textarea>
+                    <input id="submit" type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="social-media">
+          <i class="fab fa-twitter fa-lg fa-fw"></i>
+          <i class="fab fa-facebook fa-lg fa-fw"></i>
+          <i class="fab fa-instagram fa-lg fa-fw"></i>
+          <i class="fab fa-yelp fa-lg fa-fw"></i>
+        </div>
+        <div class="signup">
+          <form>
+            <label for="exampleEmailInput">Sign up for our newsletter</label>
+            <input
+              type="email"
+              placeholder="test@mailbox.com"
+              id="exampleEmailInput"
+            />
+            <input class="button-primary" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <p>Copyright © Tracy Le 2020</p>
+    </footer>
+  </body>
+</html>
