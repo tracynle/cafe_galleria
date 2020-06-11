@@ -6,12 +6,19 @@ let pictures = new Array(
     { image: 'images/coffee4.jpg', caption: 'Barista with freshly made coffee'},
     { image: 'images/coffee5.jpg', caption: 'Latte art pour'},
     { image: 'images/coffee6.jpg', caption: 'Customers relaxing at our tables'},
-    { image: 'images/coffee7.jpg', caption: 'Our brewed coffee with rich cream'}
+    { image: 'images/coffee7.jpg', caption: 'Our brewed coffee with rich cream'},
+    { image: 'images/coffee8.jpg', caption: 'Pour Over Coffee Method'},
+    { image: 'images/coffee9.jpg', caption: 'Espresso Bar'},
+    { image: 'images/coffee11.jpg', caption: 'Lounge area'},
+    { image: 'images/coffee12.jpg', caption: 'Freshly brewed coffee'},
+    { image: 'images/coffee13.jpg', caption: 'Latte Art'},
+    { image: 'images/coffee14.jpg', caption: 'Our favorite customers'},
+    { image: 'images/coffee15.jpg', caption: 'Condiment station'},
 );
 
 function displayImages() {
     let modal = document.getElementById("myModal");
-    let modalImg = document.modalImg;
+    let modalImg = document.getElementById("modalImg");
     console.log(modalImg);
 
     let modalCaption = document.getElementById("modalCaption");
@@ -67,7 +74,7 @@ function getPrevImage(e) {
     }
 
     document.getElementById('modalCaption').innerHTML = pictures[currentPicture].caption;
-    document.modalImg.src = pictures[currentPicture].image;
+    document.getElementById("modalImg").src = pictures[currentPicture].image;
 }
 
 function getNextImage(e) {
@@ -78,7 +85,7 @@ function getNextImage(e) {
     }
 
     document.getElementById('modalCaption').innerHTML = pictures[currentPicture].caption;
-    document.modalImg.src = pictures[currentPicture].image;
+    document.getElementById("modalImg").src = pictures[currentPicture].image;
 }
 
 // navbar function

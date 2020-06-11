@@ -48,7 +48,7 @@
           </div>
 
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+            <span class="fa fa-bars"></span>
           </a>
         </div>
       </div>
@@ -66,20 +66,20 @@
         <span class="close">&times;</span>
 
         <!-- where main image will be in lightbox -->
-        <img class="modal-content" name="modalImg" id="modalImg" src="" alt="a collection of images from the cafe"/>
+        <img class="modal-content" id="modalImg" src="#" alt="a collection of images from the cafe"/>
         <div id="modalCaption"></div>
         <div class="row">
           <div class="column">
             <a href="#" onclick="getPrevImage(event); " id="prev">
               <span style="font-size: 48px; color: #fff;">
-                <i class="far fa-arrow-alt-circle-left float-right"></i>
+                <span class="far fa-arrow-alt-circle-left float-right"></span>
               </span>
             </a>
           </div>
           <div class="column">
             <a href="#" onclick="getNextImage(event);" id="next">
               <span style="font-size: 48px; color: #fff;">
-                <i class="far fa-arrow-alt-circle-right float-left"></i>
+                <span class="far fa-arrow-alt-circle-right float-left"></span>
               </span>
             </a>
           </div>
@@ -89,21 +89,10 @@
     <footer>
       <div class="footer">
         <div class="social-media">
-          <i class="fab fa-twitter fa-lg fa-fw"></i>
-          <i class="fab fa-facebook fa-lg fa-fw"></i>
-          <i class="fab fa-instagram fa-lg fa-fw"></i>
-          <i class="fab fa-yelp fa-lg fa-fw"></i>
-        </div>
-        <div>
-          <form class="signup">
-            <label for="exampleEmailInput">Sign up for our newsletter</label>
-            <input
-              type="email"
-              placeholder="test@mailbox.com"
-              id="exampleEmailInput"
-            />
-            <input class="button-primary" type="submit" value="Submit" />
-          </form>
+            <span class="fab fa-twitter fa-lg fa-fw" aria-hidden="true"></span>
+            <span class="fab fa-facebook fa-lg fa-fw" aria-hidden="true"></span>
+            <span class="fab fa-instagram fa-lg fa-fw" aria-hidden="true"></span>
+            <span class="fab fa-yelp fa-lg fa-fw" aria-hidden="true"></span>
         </div>
       </div>
       <p>Copyright © Tracy Le 2020</p>

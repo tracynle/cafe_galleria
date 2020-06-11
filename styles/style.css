@@ -130,19 +130,13 @@ img.image {
     font-family: 'Lobster Two', cursive;
 }
 .text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
 
 
@@ -280,7 +274,7 @@ img:hover {
     font-size: 18px;
   }
   
-  .menu-item-name{
+  .menu-item-name {
     font-family: helvetica;
     font-weight: bold;
     border-bottom: 2px dotted rgb(213, 213, 213);
@@ -360,7 +354,7 @@ a {
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
-    padding: 80px;
+    /* padding: 80px; */
     margin: 0;
     list-style: none;
 }
@@ -625,7 +619,7 @@ textarea:hover {
     -webkit-box-flex: 2;
         -ms-flex: 2 1 500px;
             flex: 2 1 500px;
-    margin-right: 30px;
+            margin: 30px;
 }
 .footer .signup {
     -webkit-box-flex: 1;
@@ -656,7 +650,9 @@ footer p {
 make the navigation links stack on top of each other instead of 
 next to each other */
 /* =============================================== */
+@media screen and (min-width: 350px) {
 
+}
 @media screen and (max-width: 400px) {
     .topnav a {
       float: none;
@@ -711,7 +707,16 @@ next to each other */
     }
 }
 @media screen and (max-width: 840px) {
-  
+    .grid-item {
+        padding: 30px;
+        /* width: 350px; */
+        height: 150px;
+        margin-top: 100px;
+        line-height: 150px;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+      }
 }
 @media screen and (max-width: 1024px) {
     .container {
